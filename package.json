@@ -1,0 +1,42 @@
+{
+  "name": "js-correct-lockfile",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Test that no new code changes introduce multiple package manager lock files",
+  "main": "index.js",
+  "bin": {
+    "js-correct-lockfile": "bin/js-correct-lockfile.js"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "test": "mocha && node bin/js-correct-lockfile.js pnpm",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeldenning/js-correct-lockfile.git"
+  },
+  "keywords": [
+    "yarn",
+    "npm",
+    "pnpm",
+    "lockfile",
+    "test"
+  ],
+  "author": "Joel Denning",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/joeldenning/js-correct-lockfile/issues"
+  },
+  "homepage": "https://github.com/joeldenning/js-correct-lockfile#readme",
+  "devDependencies": {
+    "husky": "^5.1.1",
+    "mocha": "^8.3.0",
+    "pinst": "^2.1.6",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0"
+  }
+}
