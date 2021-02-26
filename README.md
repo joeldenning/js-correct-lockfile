@@ -37,6 +37,22 @@ pnpmx js-correct-lockfile pnpm
 }
 ```
 
+Global installation is also possible
+
+```sh
+# Install js-correct-lockfile globally
+npm install --global js-correct-lockfile
+
+yarn global add js-correct-lockfile
+
+pnpm install --global js-correct-lockfile
+
+narn global add js-correct-lockfile
+
+# Use js-correct-lockfile globally
+js-correct-lockfile npm
+```
+
 ## JS API
 
 You can also use `js-correct-lockfile` as a javascript module:
