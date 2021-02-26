@@ -26,7 +26,7 @@ npx js-correct-lockfile npm
 # Requires yarn 2. For yarn 1, use npx or ynpx (https://www.npmjs.com/package/ynpx)
 yarn dlx js-correct-lockfile yarn
 
-pnpmx js-correct-lockfile pnpm
+pnpx js-correct-lockfile pnpm
 ```
 
 ```json
